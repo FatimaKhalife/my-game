@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - Ground
+  - Ladder
+  - Platform
+  - Box
+  - G2
+  - pushable
+  - Hidden
+  - Deadly
+  - FloatingPlatform
+  - MovingPlatform
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - player
+  - Water
+  - UI
+  - box
+  - Ground
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: BG
+    uniqueID: 3774047295
+    locked: 0
+  - name: FG
+    uniqueID: 2930354003
+    locked: 0
+  - name: Player
+    uniqueID: 2213633407
+    locked: 0
+  m_RenderingLayers:
+  - Default
