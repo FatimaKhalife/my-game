@@ -47,7 +47,7 @@ public class SimonTrigger2D : MonoBehaviour
     {
         simonCompleted = true;
         simonPanel.SetActive(false);
-        rewardText.text = "The freq is : " + 21.0;
+        rewardText.text = "4,1,1,1";
         rewardText.gameObject.SetActive(true);
     }
 }
