@@ -46,7 +46,6 @@ public class DisappearingPlatform : MonoBehaviour
         {
             playerInside = true;
             ColorChanger.Instance.SetPlayerInsideInvisiblePlatform(true);
-            CheckColor();
         }
     }
 

@@ -67,37 +67,11 @@ public class PlayerMovement : MonoBehaviour
     {
         float moveInput = Input.GetAxis("Horizontal");
 
-        // If parented to a platform, movement input is relative to the platform
-        // If not parented, movement is relative to the world
         if (currentPlatform != null)
         {
-            // When parented, applying world velocity directly can cause issues.
-            // Instead, we can let parenting handle the platform's movement
-            // and only apply the player's input-based movement.
-            // However, since the original code directly sets linearVelocity,
-            // we'll adapt it to add relative velocity. A more complex approach
-            // might involve moving the character controller relative to the platform.
-            // For simplicity and to keep existing structure, we'll rely on parenting
-            // and ensure input still works as intended. The core issue with
-            // directly setting linearVelocity while parented might still exist
-            // depending on Rigidbody interpolation/extrapolation settings.
-            // A robust solution often involves not directly setting linearVelocity
-            // for player movement on moving platforms but using AddForce or
-            // moving the transform based on velocity * Time.deltaTime.
-            // However, to stick to the request of not removing logic,
-            // the parenting itself is the primary mechanism to address the platform's movement.
-            // Player input still modifies the player's velocity relative to the parent.
 
-            // The existing line works because setting linearVelocity effectively
-            // applies a velocity in world space, and the parenting handles
-            // the platform's contribution to the player's world position.
             rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
-            // A potentially more robust approach on moving platforms (if direct linearVelocity causes issues)
-            // would be to calculate the desired movement relative to the platform:
-            // Vector2 desiredMovement = new Vector2(moveInput * moveSpeed, 0);
-            // rb.velocity = (Vector2)currentPlatform.TransformDirection(desiredMovement) + new Vector2(0, rb.velocity.y);
-            // However, let's stick to the original velocity setting as requested.
         }
         else
         {
