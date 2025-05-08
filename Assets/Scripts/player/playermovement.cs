@@ -228,4 +228,5 @@ public class PlayerMovement : MonoBehaviour
             Gizmos.DrawWireSphere(groundCheck.position, 1.0f);
         }
     }
+
 }
