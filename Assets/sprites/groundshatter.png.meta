@@ -1,0 +1,1179 @@
+fileFormatVersion: 2
+guid: c7a6fcd88c57ade4fb2cd755944e6ca9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6664083463076890501
+    second: groundshatter_0
+  - first:
+      213: -7677731605451003717
+    second: groundshatter_1
+  - first:
+      213: 2683147460634926177
+    second: groundshatter_2
+  - first:
+      213: -5602344990653372356
+    second: groundshatter_3
+  - first:
+      213: 170945803982652033
+    second: groundshatter_4
+  - first:
+      213: -7290709312490407912
+    second: groundshatter_5
+  - first:
+      213: 8291002800498587667
+    second: groundshatter_6
+  - first:
+      213: 4263716683726890309
+    second: groundshatter_7
+  - first:
+      213: 7380045238902091690
+    second: groundshatter_8
+  - first:
+      213: -5419310454405516232
+    second: groundshatter_9
+  - first:
+      213: -3927664205046176481
+    second: groundshatter_10
+  - first:
+      213: -7585934667531854215
+    second: groundshatter_11
+  - first:
+      213: 6897923987998225837
+    second: groundshatter_12
+  - first:
+      213: -6900398128438830408
+    second: groundshatter_13
+  - first:
+      213: -4251263636157102476
+    second: groundshatter_14
+  - first:
+      213: -277982459918643193
+    second: groundshatter_15
+  - first:
+      213: 2738896684689987069
+    second: groundshatter_16
+  - first:
+      213: 4714024633930471374
+    second: groundshatter_17
+  - first:
+      213: -3064658575051934491
+    second: groundshatter_18
+  - first:
+      213: -1662861356222724551
+    second: groundshatter_19
+  - first:
+      213: -8939042885827387776
+    second: groundshatter_20
+  - first:
+      213: 7051742120848439307
+    second: groundshatter_21
+  - first:
+      213: -4410573711980003716
+    second: groundshatter_22
+  - first:
+      213: 6915421046119199952
+    second: groundshatter_23
+  - first:
+      213: -3621277002174387894
+    second: groundshatter_24
+  - first:
+      213: -3608341757975219336
+    second: groundshatter_25
+  - first:
+      213: 1029151644855517263
+    second: groundshatter_26
+  - first:
+      213: 6596598446456692743
+    second: groundshatter_27
+  - first:
+      213: 3569925011357096505
+    second: groundshatter_28
+  - first:
+      213: -8576595891442889729
+    second: groundshatter_29
+  - first:
+      213: 8712777818852093377
+    second: groundshatter_30
+  - first:
+      213: 2451779741740605742
+    second: groundshatter_31
+  - first:
+      213: 6240189731747413653
+    second: groundshatter_32
+  - first:
+      213: -1139758826989284745
+    second: groundshatter_33
+  - first:
+      213: 8143873538339772871
+    second: groundshatter_34
+  - first:
+      213: -618176642044502677
+    second: groundshatter_35
+  - first:
+      213: 3218804244139401545
+    second: groundshatter_36
+  - first:
+      213: -7190913937628881871
+    second: groundshatter_37
+  - first:
+      213: -5430964427640674862
+    second: groundshatter_38
+  - first:
+      213: 5371700905777954853
+    second: groundshatter_39
+  - first:
+      213: -3963246261714680874
+    second: groundshatter_40
+  - first:
+      213: -8848436128369172009
+    second: groundshatter_41
+  - first:
+      213: 1413106208451862722
+    second: groundshatter_42
+  - first:
+      213: -8830013934001643715
+    second: groundshatter_43
+  - first:
+      213: -1209460222161049507
+    second: groundshatter_44
+  - first:
+      213: 4137650220185521021
+    second: groundshatter_45
+  - first:
+      213: -5391240122022532510
+    second: groundshatter_46
+  - first:
+      213: -1904005619986990997
+    second: groundshatter_47
+  - first:
+      213: -365380550525042371
+    second: groundshatter_48
+  - first:
+      213: 942930661595439767
+    second: groundshatter_49
+  - first:
+      213: -8461486682514504315
+    second: groundshatter_50
+  - first:
+      213: 3208650728426984407
+    second: groundshatter_51
+  - first:
+      213: -6274096487728085247
+    second: groundshatter_52
+  - first:
+      213: 7873445647244797719
+    second: groundshatter_53
+  - first:
+      213: -161923414807534896
+    second: groundshatter_54
+  - first:
+      213: -972186589171526376
+    second: groundshatter_55
+  - first:
+      213: 5117760912468750624
+    second: groundshatter_56
+  - first:
+      213: 1137256239245288231
+    second: groundshatter_57
+  - first:
+      213: 6526267904949805614
+    second: groundshatter_58
+  - first:
+      213: -7913772824523785083
+    second: groundshatter_59
+  - first:
+      213: 1605408500887624691
+    second: groundshatter_60
+  - first:
+      213: 3657545212226165985
+    second: groundshatter_61
+  - first:
+      213: -1340297238563201921
+    second: groundshatter_62
+  - first:
+      213: 6674990581523371660
+    second: groundshatter_63
+  - first:
+      213: -5360743408876887628
+    second: groundshatter_64
+  - first:
+      213: 8214861624538927170
+    second: groundshatter_65
+  - first:
+      213: -4494407122553231519
+    second: groundshatter_66
+  - first:
+      213: 32696591187740547
+    second: groundshatter_67
+  - first:
+      213: 2501539039745970339
+    second: groundshatter_68
+  - first:
+      213: 981201368364652016
+    second: groundshatter_69
+  - first:
+      213: -4424972511106453463
+    second: groundshatter_70
+  - first:
+      213: -2788626176255214485
+    second: groundshatter_71
+  - first:
+      213: 5737935301022580600
+    second: groundshatter_72
+  - first:
+      213: -8555473632860102119
+    second: groundshatter_73
+  - first:
+      213: 1598575781557735907
+    second: groundshatter_74
+  - first:
+      213: 8152358494773653208
+    second: groundshatter_75
+  - first:
+      213: -131376063343628372
+    second: groundshatter_76
+  - first:
+      213: -5242837284555754395
+    second: groundshatter_77
+  - first:
+      213: 3116638578381468630
+    second: groundshatter_78
+  - first:
+      213: -5270986846404111645
+    second: groundshatter_79
+  - first:
+      213: -8011855084476988358
+    second: groundshatter_80
+  - first:
+      213: -8179397144220070283
+    second: groundshatter_81
+  - first:
+      213: -4427938872868746158
+    second: groundshatter_82
+  - first:
+      213: 8141217042354733018
+    second: groundshatter_83
+  - first:
+      213: -550956708306926726
+    second: groundshatter_84
+  - first:
+      213: 9036779274856285707
+    second: groundshatter_85
+  - first:
+      213: 402970613452275262
+    second: groundshatter_86
+  - first:
+      213: 3357852711406284791
+    second: groundshatter_87
+  - first:
+      213: -697091026010239750
+    second: groundshatter_88
+  - first:
+      213: 1959792502509150100
+    second: groundshatter_89
+  - first:
+      213: -4634184999786803230
+    second: groundshatter_90
+  - first:
+      213: -1439972346692277276
+    second: groundshatter_91
+  - first:
+      213: -4907597599798290195
+    second: groundshatter_92
+  - first:
+      213: -6114064901979660863
+    second: groundshatter_93
+  - first:
+      213: 7218889059033004098
+    second: groundshatter_94
+  - first:
+      213: 8384590126370009605
+    second: groundshatter_95
+  - first:
+      213: 6286061985060653757
+    second: groundshatter_96
+  - first:
+      213: 2095135978134078576
+    second: groundshatter_97
+  - first:
+      213: -6078303912125583095
+    second: groundshatter_98
+  - first:
+      213: -5902858740871630875
+    second: groundshatter_99
+  - first:
+      213: 3329236338266635402
+    second: groundshatter_100
+  - first:
+      213: 2363495744146616272
+    second: groundshatter_101
+  - first:
+      213: -7870989812915578086
+    second: groundshatter_102
+  - first:
+      213: 6933745658297782344
+    second: groundshatter_103
+  - first:
+      213: 7487345022245062742
+    second: groundshatter_104
+  - first:
+      213: 8970455456667650070
+    second: groundshatter_105
+  - first:
+      213: 6139543305458671616
+    second: groundshatter_106
+  - first:
+      213: 2440066361797991154
+    second: groundshatter_107
+  - first:
+      213: 7271829666547498330
+    second: groundshatter_108
+  - first:
+      213: -4588446741912820179
+    second: groundshatter_109
+  - first:
+      213: -7557293314676595317
+    second: groundshatter_110
+  - first:
+      213: 3093282412558881730
+    second: groundshatter_111
+  - first:
+      213: 5219372500847717703
+    second: groundshatter_112
+  - first:
+      213: -235302932610323917
+    second: groundshatter_113
+  - first:
+      213: -1488754911214824165
+    second: groundshatter_114
+  - first:
+      213: -4218960428315485529
+    second: groundshatter_115
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: groundshatter_0
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 892
+        width: 239
+        height: 47
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 4, y: 1, z: 3, w: 2}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b783fbde56b6483a0800000000000000
+      internalID: -6664083463076890501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundshatter_1
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 876
+        width: 236
+        height: 63
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb8ad4088c7337590800000000000000
+      internalID: -7677731605451003717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundshatter_2
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 865
+        width: 235
+        height: 73
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16cd22746647c3520800000000000000
+      internalID: 2683147460634926177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundshatter_3
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 689
+        width: 241
+        height: 75
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c38aaead9e87042b0800000000000000
+      internalID: -5602344990653372356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundshatter_4
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 689
+        width: 243
+        height: 76
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 182ca329d425f5200800000000000000
+      internalID: 170945803982652033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundshatter_6
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 676
+        width: 238
+        height: 92
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 318bc739e1f8f0370800000000000000
+      internalID: 8291002800498587667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundshatter_11
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 489
+        width: 241
+        height: 103
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97e5174ac9859b690800000000000000
+      internalID: -7585934667531854215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundshatter_14
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 488
+        width: 246
+        height: 103
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47602504f3a7005c0800000000000000
+      internalID: -4251263636157102476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundshatter_18
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 477
+        width: 240
+        height: 114
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e4bc2463452875d0800000000000000
+      internalID: -3064658575051934491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundshatter_41
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 297
+        width: 238
+        height: 103
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d1a2d6e83a043580800000000000000
+      internalID: -8848436128369172009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundshatter_44
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 296
+        width: 238
+        height: 104
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5820200652273fe0800000000000000
+      internalID: -1209460222161049507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundshatter_51
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 367
+        width: 42
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d3503c56da678c20800000000000000
+      internalID: 3208650728426984407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundshatter_52
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 341
+        width: 42
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 107017a6c7eede8a0800000000000000
+      internalID: -6274096487728085247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundshatter_53
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 367
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7172f52d919144d60800000000000000
+      internalID: 7873445647244797719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundshatter_54
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 350
+        width: 30
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d2249b138bb0cdf0800000000000000
+      internalID: -161923414807534896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundshatter_55
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 367
+        width: 42
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8155801b2791282f0800000000000000
+      internalID: -972186589171526376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundshatter_56
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 367
+        width: 55
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02134115f60f50740800000000000000
+      internalID: 5117760912468750624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundshatter_63
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 319
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8657ca719452ac50800000000000000
+      internalID: 6674990581523371660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundshatter_64
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 320
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b160e5a540da95b0800000000000000
+      internalID: -5360743408876887628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundshatter_65
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 336
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24091a19f1d010270800000000000000
+      internalID: 8214861624538927170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundshatter_66
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 264
+        width: 31
+        height: 73
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 167aa30d888a0a1c0800000000000000
+      internalID: -4494407122553231519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundshatter_73
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 303
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 912272c4f0ad44980800000000000000
+      internalID: -8555473632860102119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundshatter_74
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 295
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e19a4624384f2610800000000000000
+      internalID: 1598575781557735907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundshatter_75
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 299
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8de2f92abdef22170800000000000000
+      internalID: 8152358494773653208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundshatter_93
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 179
+        width: 71
+        height: 30
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cd91d78d5a762ba0800000000000000
+      internalID: -6114064901979660863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundshatter_5
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 282
+        width: 258
+        height: 120
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35589555b93c3274993320472d8c0159
+      internalID: 1813343786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundshatter_7
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 79
+        width: 259
+        height: 116
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2971a25d94c019140857ea80dc28d6d5
+      internalID: -1046450090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundshatter_8
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 83
+        width: 257
+        height: 117
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06122f570d20cfe47825fa31584adea8
+      internalID: 805839502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundshatter_9
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 85
+        width: 228
+        height: 112
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d56a13e20b6e0e448d39e09fe04a359
+      internalID: -1929122457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundshatter_10
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 84
+        width: 180
+        height: 84
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c5dc7ff19880d428c1956b8125fb8e
+      internalID: 1709867350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundshatter_12
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 86
+        width: 124
+        height: 53
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 233605d605e2ff04c98ee4db97f26763
+      internalID: 1237448527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e6725e6c379d4a34d851fe4219974d49
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      groundshatter_10: 1709867350
+      groundshatter_12: 1237448527
+      groundshatter_5: 1813343786
+      groundshatter_7: -1046450090
+      groundshatter_8: 805839502
+      groundshatter_9: -1929122457
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

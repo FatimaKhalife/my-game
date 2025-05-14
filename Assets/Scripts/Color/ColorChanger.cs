@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections; // Required for Coroutines
+using System.Collections;
 
 public class ColorChanger : MonoBehaviour
 {
@@ -8,30 +8,26 @@ public class ColorChanger : MonoBehaviour
 
     [Header("References")]
     public Camera mainCamera;
-    public GameObject colorPalette; // The parent GameObject of your color buttons
+    public GameObject colorPalette;
     public Image[] colorButtons;
-    public CanvasGroup paletteCanvasGroup; // Assign in Inspector or it will be auto-added
+    public CanvasGroup paletteCanvasGroup;
 
     [Header("Colors & Selection")]
     public Color[] colors;
     public Color initialBackgroundColor = Color.gray;
-    private int currentColorIndex = -1; // Index of the color selected for application
+    private int currentColorIndex = -1;
 
-    [Header("Transitions & Timings (Adjust for Speed)")]
-    // Increased for faster button scaling
+    [Header("Transitions & Timings")]
     public float buttonScaleSmoothSpeed = 1000f;
-    // Increased for faster background color transition
     public float backgroundColorTransitionSpeed = 1000f;
-    // Increased for faster palette fade
     public float paletteFadeSpeed = 1000f;
-    public float longClickThreshold = 0.5f; // Time to hold for long click
+    public float longClickThreshold = 0.5f;
 
-    // Internal State
-    private bool isPaletteVisible = false; // Logical state of palette visibility
+    private bool isPaletteVisible = false;
     private float clickDuration = 0f;
     private bool isPlayerInsideInvisiblePlatform = false;
-    private float[] targetScales; // For button hover scaling
-    private Color targetCameraBackgroundColor; // Target for smooth background color lerp
+    private float[] targetScales;
+    private Color targetCameraBackgroundColor;
     private Coroutine paletteFadeCoroutine;
 
     private void Awake()
@@ -39,7 +35,6 @@ public class ColorChanger : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -53,27 +48,23 @@ public class ColorChanger : MonoBehaviour
             if (paletteCanvasGroup == null)
             {
                 paletteCanvasGroup = colorPalette.AddComponent<CanvasGroup>();
-                Debug.LogWarning("ColorChanger: Automatically added CanvasGroup to the colorPalette GameObject. Please review its settings if needed.", colorPalette);
             }
-        }
-        else if (colorPalette == null)
-        {
-            Debug.LogError("ColorChanger: colorPalette GameObject is not assigned!", this);
         }
     }
 
     private void Start()
     {
+        InitializeColorChanger();
+    }
+
+    private void InitializeColorChanger()
+    {
+        mainCamera = Camera.main;
         if (mainCamera == null)
         {
-            mainCamera = Camera.main;
-            if (mainCamera == null)
-            {
-                Debug.LogError("ColorChanger: Main Camera is not assigned and could not be found! Disabling script.", this);
-                enabled = false;
-                return;
-            }
-            Debug.LogWarning("ColorChanger: mainCamera was not assigned. Defaulted to Camera.main.", this);
+            Debug.LogError("ColorChanger: Main Camera not found!", this);
+            enabled = false;
+            return;
         }
 
         mainCamera.backgroundColor = initialBackgroundColor;
@@ -84,11 +75,7 @@ public class ColorChanger : MonoBehaviour
             paletteCanvasGroup.alpha = 0f;
             paletteCanvasGroup.interactable = false;
             paletteCanvasGroup.blocksRaycasts = false;
-            if (colorPalette != null) colorPalette.SetActive(true); // Keep GameObject active
-        }
-        else if (colorPalette != null)
-        {
-            colorPalette.SetActive(false); // Fallback if no CanvasGroup
+            colorPalette.SetActive(true);
         }
 
         if (colorButtons != null && colorButtons.Length > 0)
@@ -98,11 +85,6 @@ public class ColorChanger : MonoBehaviour
             {
                 targetScales[i] = 1f;
             }
-        }
-        else
-        {
-            Debug.LogWarning("ColorChanger: colorButtons array is not assigned or is empty.", this);
-            targetScales = new float[0]; // Initialize to empty to prevent null errors
         }
     }
 

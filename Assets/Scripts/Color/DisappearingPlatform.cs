@@ -59,10 +59,7 @@ public class DisappearingPlatform : MonoBehaviour
             {
                 ColorChanger.Instance.SetPlayerInsideInvisiblePlatform(true);
             }
-            // No need to call CheckColor() here if the platform state only changes based on the global color,
-            // unless entering it should immediately make it disappear if colors match.
-            // Your current CheckColor() makes it disappear if colors match.
-            // If the platform is already invisible (because colors match), entering it as a trigger is the expected behavior.
+       
         }
     }
 
@@ -76,16 +73,7 @@ public class DisappearingPlatform : MonoBehaviour
                 ColorChanger.Instance.SetPlayerInsideInvisiblePlatform(false);
             }
             // CheckColor(); // Re-evaluate if this call is needed.
-            // If the player exits, the platform's state (visible/invisible, solid/trigger)
-            // should still be determined by the comparison of its color index
-            // with the global current color index.
-            // If its color matches the global color, it should remain invisible/trigger.
-            // If not, it should be visible/solid.
-            // The CheckColor() method already handles this logic.
-            // So, calling it here ensures its state is correct relative to the global color
-            // *after* the player is no longer influencing the "can't change color" rule.
-
-            // The Update method will now handle hiding the message reliably
+           
         }
     }
 
