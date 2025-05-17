@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using TMPro;
 
 public class StatueActivator : MonoBehaviour
 {
@@ -11,11 +12,24 @@ public class StatueActivator : MonoBehaviour
     private bool playerIsNear = false;
     private bool isPlaying = false;
 
+
+    
+    [Header("UI Prompt")]
+    public TMP_Text pressPText;
     void Update()
     {
         if (playerIsNear && Input.GetKeyDown(KeyCode.P) && !isPlaying)
         {
             StartCoroutine(PlayStatueSequence());
+        }
+    
+        if (playerIsNear)
+        {
+            pressPText.gameObject.SetActive(true);
+        }
+        else
+        {
+            pressPText.gameObject.SetActive(false);
         }
     }
 

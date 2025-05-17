@@ -10,7 +10,6 @@ public class HealthBar : MonoBehaviour
     public Image fill;
     [SerializeField] private Animator playerAnimator;  // Serialized field for the player's Animator
     [SerializeField] private Rigidbody2D playerRigidbody;  // Serialized field for the player's Rigidbody2D
-    public string deathAnimationTrigger = "Die";  // Death animation trigger name
     public float deathDelay = 2f;  // Delay before restarting the level
 
     private bool isDead = false;
@@ -45,9 +44,9 @@ public class HealthBar : MonoBehaviour
             Debug.Log("Player Died, triggering animation");
 
       
-            playerRigidbody.linearVelocity = Vector2.zero;  // Set linear velocity to zero
-            playerRigidbody.bodyType = RigidbodyType2D.Kinematic;  // Set Rigidbody2D to kinematic to stop movement
-            playerAnimator.SetTrigger(deathAnimationTrigger);
+            playerRigidbody.linearVelocity = Vector2.zero;  
+            playerRigidbody.bodyType = RigidbodyType2D.Kinematic;  
+            playerAnimator.SetTrigger("Die");
         
 
         // Restart the level after a delay to allow the death animation to play

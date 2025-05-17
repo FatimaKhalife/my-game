@@ -1,42 +1,79 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 using System.Collections;
 
 public class SoundPuzzleController : MonoBehaviour
 {
-    public GameObject puzzlePanel; // The full canvas or panel
-    public Image[] lightBulbs; // Array of UI images for the bulbs
+    [Header("Puzzle UI")]
+    public GameObject puzzlePanel; // The puzzle UI panel
+    public Image[] lightBulbs; // UI images for the bulbs
     public Sprite lightOn;
     public Sprite lightOff;
 
-    public string[] correctSequence = { "Wind", "Girl", "Bell" };
-    private string[] playerSequence = new string[3];
+    [Header("Puzzle Logic")]
+    [SerializeField]
+    private string[] correctSequence; // Set per tower in Inspector
+    private string[] playerSequence;
     private int inputIndex = 0;
 
-    public SpriteRenderer diamondSpriteRenderer; // Assign the diamond SpriteRenderer in inspector
-    public GameObject diamondObject; // Diamond object for positioning
+    [Header("Puzzle Result")]
+    public SpriteRenderer diamondSpriteRenderer; // Assign this in the inspector
+    public GameObject diamondObject; // The diamond GameObject (for floating)
 
-    public GameObject towerObject; // The tower object that player needs to be near
-    private bool puzzleSolved = false; // Flag to check if the puzzle is solved
+    [Header("Proximity Settings")]
+    public GameObject towerObject; // The tower GameObject (used for proximity check)
+    private bool puzzleSolved = false;
 
-    public float floatSpeed = 1f; // Speed at which the diamond floats
-    public float floatAmount = 0.5f; // Amount the diamond moves up and down
-
+    [Header("Diamond Float Effect")]
+    public float floatSpeed = 1f;
+    public float floatAmount = 0.5f;
     private Vector3 initialDiamondPosition;
 
-    public Animator doorAnimator; // Reference to the Animator of the door
-    public Transform player; // Reference to the player (must be assigned in the inspector)
-    public float openDistance = 3f; // Distance at which the player can open the panel (in units)
+    [Header("Door Interaction")]
+    public Animator doorAnimator; // Animator for the door object
+    public Transform player; // Reference to the player (assign in inspector)
+    public float openDistance = 3f; // Distance to open the panel
+
+    [Header("UI Prompt")]
+    public TMP_Text pressPText; // TextMeshPro UI element for "Press P"
+
+    void Start()
+    {
+        playerSequence = new string[correctSequence.Length];
+    }
+
+    void Update()
+    {
+        float distance = Vector3.Distance(player.position, towerObject.transform.position);
+
+        if (distance <= openDistance && !puzzleSolved)
+        {
+            pressPText.gameObject.SetActive(true);
+
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                OpenPanel();
+            }
+        }
+        else
+        {
+            pressPText.gameObject.SetActive(false);
+        }
+    }
 
     public void OnButtonPress(string soundName)
     {
-        if (inputIndex >= 3 || puzzleSolved) return; // Prevent further input if puzzle is solved
+        if (inputIndex >= correctSequence.Length || puzzleSolved) return;
 
         playerSequence[inputIndex] = soundName;
-        lightBulbs[inputIndex].sprite = lightOn;
+        if (inputIndex < lightBulbs.Length)
+        {
+            lightBulbs[inputIndex].sprite = lightOn;
+        }
         inputIndex++;
 
-        if (inputIndex == 3)
+        if (inputIndex == correctSequence.Length)
             CheckSequence();
     }
 
@@ -57,61 +94,52 @@ public class SoundPuzzleController : MonoBehaviour
             Debug.Log("Puzzle Solved!");
             puzzlePanel.SetActive(false);
             diamondSpriteRenderer.color = Color.red;
-            puzzleSolved = true; // Mark the puzzle as solved
+            puzzleSolved = true;
 
-            // Start the diamond floating after the puzzle is solved
             StartCoroutine(FloatDiamond());
-
-            // Trigger the door opening animation
-            doorAnimator.SetTrigger("OpenDoor"); // Assuming you have an "OpenDoor" trigger in the Animator
+            doorAnimator.SetTrigger("OpenDoor");
         }
         else
         {
             Debug.Log("Wrong Sequence! Try again.");
-            ResetPuzzle();
+            StartCoroutine(ResetWithDelay());
         }
     }
 
-    // Coroutine for floating the diamond up and down
+    IEnumerator ResetWithDelay()
+    {
+        yield return new WaitForSeconds(0.5f); // Optional delay before reset
+        ResetPuzzle();
+    }
+
     IEnumerator FloatDiamond()
     {
-        initialDiamondPosition = diamondObject.transform.position; // Save the initial position
+        initialDiamondPosition = diamondObject.transform.position;
 
-        while (puzzleSolved) // Keep floating as long as the puzzle is solved
+        while (puzzleSolved)
         {
-            float newY = Mathf.PingPong(Time.time * floatSpeed, floatAmount); // Create a floating effect
+            float newY = Mathf.PingPong(Time.time * floatSpeed, floatAmount);
             diamondObject.transform.position = new Vector3(initialDiamondPosition.x, initialDiamondPosition.y + newY, initialDiamondPosition.z);
 
-            yield return null; // Wait for the next frame
+            yield return null;
         }
     }
 
     void ResetPuzzle()
     {
         inputIndex = 0;
+        playerSequence = new string[correctSequence.Length];
         for (int i = 0; i < lightBulbs.Length; i++)
         {
             lightBulbs[i].sprite = lightOff;
         }
     }
 
-    public void OpenPanel() // Call this when player presses "P" near the tower
+    public void OpenPanel()
     {
-        if (puzzleSolved) return; // Don't open the panel if the puzzle is solved
+        if (puzzleSolved) return;
 
         ResetPuzzle();
         puzzlePanel.SetActive(true);
-    }
-
-    // Detect when the player presses "P" near the tower
-    void Update()
-    {
-        if (Vector3.Distance(player.position, towerObject.transform.position) <= openDistance && !puzzleSolved)
-        {
-            if (Input.GetKeyDown(KeyCode.P)) // Only open the panel if the player presses "P"
-            {
-                OpenPanel(); // Open the panel
-            }
-        }
     }
 }
