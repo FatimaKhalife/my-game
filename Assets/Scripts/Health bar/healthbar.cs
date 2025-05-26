@@ -1,23 +1,25 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;  // To load the scene
+using UnityEngine.SceneManagement;
 
 public class HealthBar : MonoBehaviour
 {
     public Slider slider;
     public Gradient gradient;
     public Image fill;
-    [SerializeField] private Animator playerAnimator;  // Serialized field for the player's Animator
-    [SerializeField] private Rigidbody2D playerRigidbody;  // Serialized field for the player's Rigidbody2D
-    public float deathDelay = 2f;  // Delay before restarting the level
+    [SerializeField] private Animator playerAnimator;
+    [SerializeField] private Rigidbody2D playerRigidbody;
+    public float deathDelay = 0f;
 
     private bool isDead = false;
+
+    public bool IsDead => isDead; // Public property to check death status
 
     private void Update()
     {
         fill.color = Color.red;
-        // If health reaches 0 and the player is not already dead
+
         if (slider.value <= 0 && !isDead)
         {
             isDead = true;
@@ -38,33 +40,24 @@ public class HealthBar : MonoBehaviour
         fill.color = gradient.Evaluate(slider.normalizedValue);
     }
 
-    // This method will be called when health reaches 0
     private void Die()
     {
-            Debug.Log("Player Died, triggering animation");
+        playerRigidbody.linearVelocity = Vector2.zero;
+        playerRigidbody.bodyType = RigidbodyType2D.Kinematic;
+        playerAnimator.SetTrigger("Die");
 
-      
-            playerRigidbody.linearVelocity = Vector2.zero;  
-            playerRigidbody.bodyType = RigidbodyType2D.Kinematic;  
-            playerAnimator.SetTrigger("Die");
-        
-
-        // Restart the level after a delay to allow the death animation to play
-           StartCoroutine(RestartLevelAfterDelay(deathDelay));
+        StartCoroutine(RestartLevelAfterDelay(deathDelay));
     }
 
-    // Coroutine to restart the level after the death animation
     private IEnumerator RestartLevelAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
 
-        // Reload the current scene
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
-        // After the level restarts, restore the player’s Rigidbody2D
         if (playerRigidbody != null)
         {
-            playerRigidbody.bodyType = RigidbodyType2D.Dynamic;  // Restore Rigidbody2D physics to dynamic
+            playerRigidbody.bodyType = RigidbodyType2D.Dynamic;
         }
     }
 }

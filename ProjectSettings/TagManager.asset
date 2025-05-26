@@ -16,6 +16,8 @@ TagManager:
   - MovingPlatform
   - wall
   - arrow
+  - Enemy
+  - PlayerProjectile
   layers:
   - Default
   - TransparentFX

@@ -33,7 +33,9 @@ public class PlayerMovement : MonoBehaviour
 
     private Transform currentPlatform = null;
 
-    // Public getter for facing direction
+    [Header("References")]
+    [SerializeField] private HealthBar healthBar; // Reference to HealthBar
+
     public bool IsFacingRight => isFacingRight;
 
     void Start()
@@ -46,6 +48,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (healthBar != null && healthBar.IsDead) return;
+
         HandleMovementInput();
         CheckGround();
         HandleJump();
@@ -67,7 +71,6 @@ public class PlayerMovement : MonoBehaviour
     void HandleMovementInput()
     {
         float moveInput = Input.GetAxis("Horizontal");
-
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
         if (moveInput > 0)
@@ -228,5 +231,4 @@ public class PlayerMovement : MonoBehaviour
             Gizmos.DrawWireSphere(groundCheck.position, 1.0f);
         }
     }
-
 }

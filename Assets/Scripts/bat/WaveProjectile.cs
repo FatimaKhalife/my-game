@@ -21,16 +21,22 @@ public class WaveProjectile : MonoBehaviour
         transform.Translate(moveDirection * speed * Time.deltaTime);
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+   void OnTriggerEnter2D(Collider2D other)
+{
+    if (other.CompareTag("Player"))
     {
-        if (other.CompareTag("Player"))
+        playerhealth player = other.GetComponent<playerhealth>();
+        if (player != null)
         {
-            // Damage player
-            Destroy(gameObject);
+            player.TakeDamage(20); // or any amount you want
         }
-        else if (!other.CompareTag("Enemy"))
-        {
-            Destroy(gameObject);
-        }
+
+        Destroy(gameObject); // destroy the wave after hitting the player
     }
+    else if (!other.CompareTag("Enemy"))
+    {
+        Destroy(gameObject); // optional: if wave hits wall or other
+    }
+}
+
 }
