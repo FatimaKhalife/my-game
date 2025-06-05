@@ -18,6 +18,8 @@ TagManager:
   - arrow
   - Enemy
   - PlayerProjectile
+  - inv
+  - dis
   layers:
   - Default
   - TransparentFX

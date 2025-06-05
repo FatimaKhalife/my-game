@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 
@@ -109,7 +109,7 @@ public class ColorChanger : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (isPaletteVisible || (paletteCanvasGroup != null && paletteCanvasGroup.alpha > 0.001f)) // Check against small alpha for fading out
+        if (isPaletteVisible || (paletteCanvasGroup != null && paletteCanvasGroup.alpha > 0.001f))
         {
             SmoothButtonScaling();
         }
@@ -117,6 +117,9 @@ public class ColorChanger : MonoBehaviour
 
     private void HandleInput()
     {
+        // Prevent all input when inside an invisible platform
+        if (isPlayerInsideInvisiblePlatform) return;
+
         if (Input.GetMouseButtonDown(0))
         {
             clickDuration = 0f;
@@ -152,7 +155,6 @@ public class ColorChanger : MonoBehaviour
     {
         if (mainCamera != null && mainCamera.backgroundColor != targetCameraBackgroundColor)
         {
-            // For very fast changes, high speed value. If speed is extremely high, it's almost instant.
             mainCamera.backgroundColor = Color.Lerp(mainCamera.backgroundColor, targetCameraBackgroundColor, backgroundColorTransitionSpeed * Time.deltaTime);
         }
     }
@@ -167,9 +169,8 @@ public class ColorChanger : MonoBehaviour
         Camera uiCamera = null;
         if (parentCanvas && parentCanvas.renderMode != RenderMode.ScreenSpaceOverlay)
         {
-            uiCamera = parentCanvas.worldCamera ?? mainCamera; // Use canvas camera or fallback
+            uiCamera = parentCanvas.worldCamera ?? mainCamera;
         }
-
 
         for (int i = 0; i < colorButtons.Length; i++)
         {
@@ -185,7 +186,6 @@ public class ColorChanger : MonoBehaviour
         for (int i = 0; i < colorButtons.Length; i++)
         {
             if (colorButtons[i] == null) continue;
-            // Ensure targetScales has been initialized and has the correct length
             if (i >= targetScales.Length) continue;
 
             if (i == hoveredButtonIndex)
@@ -259,7 +259,6 @@ public class ColorChanger : MonoBehaviour
                     targetScales[i] = 1f;
                 }
             }
-            // Optional: currentColorIndex = -1;
         }
     }
 
@@ -293,7 +292,6 @@ public class ColorChanger : MonoBehaviour
         }
 
         float currentAlpha = paletteCanvasGroup.alpha;
-        // For very fast changes, high speed value. Loop might run only once or twice.
         while (!Mathf.Approximately(currentAlpha, targetAlpha))
         {
             currentAlpha = Mathf.MoveTowards(currentAlpha, targetAlpha, paletteFadeSpeed * Time.deltaTime);

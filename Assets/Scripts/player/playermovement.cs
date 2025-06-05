@@ -56,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
         HandlePushing();
         UpdateAnimations();
 
-        if (Input.GetKeyDown(KeyCode.Q) && waveDone)
+        if (Input.GetKeyDown(KeyCode.Q) && waveDone && echoWave !=null)
         {
             echoWave.ActivateWave(transform.position);
             waveDone = false;

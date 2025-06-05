@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using UnityEngine.Tilemaps;
+using System.Collections;
 
 public class EnemyBat : MonoBehaviour
 {
@@ -19,6 +21,10 @@ public class EnemyBat : MonoBehaviour
 
     [Header("References")]
     public Transform player;
+    public Tilemap tilemapToReveal; // Reference to Tilemap component
+
+    [Header("Fade Settings")]
+    public float fadeDuration = 2f;
 
     private int hitCount = 0;
     private float shootTimer;
@@ -31,16 +37,20 @@ public class EnemyBat : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+
+        // Make sure tilemap starts invisible
+        if (tilemapToReveal != null)
+        {
+            SetTilemapAlpha(0f);
+        }
     }
 
     void Update()
     {
         if (isFlyingAway)
         {
-            // Move upward when flying away
             transform.Translate(Vector2.up * flyAwaySpeed * Time.deltaTime);
 
-            // Destroy when far enough from the player
             if (Vector2.Distance(transform.position, player.position) > destroyDistance)
             {
                 Destroy(gameObject);
@@ -89,7 +99,6 @@ public class EnemyBat : MonoBehaviour
 
     void ShootWave()
     {
-        // Trigger attack animation
         if (animator != null)
         {
             animator.SetTrigger("Attack");
@@ -116,7 +125,7 @@ public class EnemyBat : MonoBehaviour
         if (other.CompareTag("PlayerProjectile"))
         {
             hitCount++;
-            Destroy(other.gameObject); // Destroy the projectile
+            Destroy(other.gameObject);
 
             if (hitCount >= maxHits)
             {
@@ -130,8 +139,38 @@ public class EnemyBat : MonoBehaviour
         isFlyingAway = true;
         hasDetectedPlayer = false;
         rb.linearVelocity = Vector2.zero;
-       
-        GetComponent<Collider2D>().enabled = false; // Optional: disable collision
+        GetComponent<Collider2D>().enabled = false;
 
+        if (tilemapToReveal != null)
+        {
+            StartCoroutine(FadeInTilemap());
+        }
+    }
+
+    IEnumerator FadeInTilemap()
+    {
+        float elapsed = 0f;
+        while (elapsed < fadeDuration)
+        {
+            float alpha = Mathf.Lerp(0f, 1f, elapsed / fadeDuration);
+            SetTilemapAlpha(alpha);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+        SetTilemapAlpha(1f); // Ensure fully visible at end
+    }
+
+    void SetTilemapAlpha(float alpha)
+    {
+        if (tilemapToReveal != null)
+        {
+            TilemapRenderer renderer = tilemapToReveal.GetComponent<TilemapRenderer>();
+            if (renderer != null)
+            {
+                Color color = renderer.material.color;
+                color.a = alpha;
+                renderer.material.color = color;
+            }
+        }
     }
 }
