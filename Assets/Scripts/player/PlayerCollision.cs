@@ -24,7 +24,7 @@ public class PlayerCollision : MonoBehaviour
     IEnumerator RestartAfterAnimation()
     {
         // Wait for the length of the death animation
-        yield return new WaitForSeconds(1.5f); // Replace with actual animation length
+        yield return new WaitForSeconds(0.5f); // Replace with actual animation length
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

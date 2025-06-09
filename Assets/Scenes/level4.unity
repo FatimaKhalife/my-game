@@ -219,6 +219,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7731212401683502271, guid: a6e47220aaa9ff64c8774f0f074b6721, type: 3}
+      propertyPath: playerMessageText
+      value: 
+      objectReference: {fileID: 1812176683}
+    - target: {fileID: 7731212401683502271, guid: a6e47220aaa9ff64c8774f0f074b6721, type: 3}
       propertyPath: platformColorIndex
       value: 1
       objectReference: {fileID: 0}
@@ -354,6 +358,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.4
       objectReference: {fileID: 0}
+    - target: {fileID: 7731212401683502271, guid: a6e47220aaa9ff64c8774f0f074b6721, type: 3}
+      propertyPath: playerMessageText
+      value: 
+      objectReference: {fileID: 1812176683}
     - target: {fileID: 7731212401683502271, guid: a6e47220aaa9ff64c8774f0f074b6721, type: 3}
       propertyPath: platformColorIndex
       value: 3
@@ -846,6 +854,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7731212401683502271, guid: a6e47220aaa9ff64c8774f0f074b6721, type: 3}
+      propertyPath: playerMessageText
+      value: 
+      objectReference: {fileID: 1812176683}
     - target: {fileID: 7731212401683502271, guid: a6e47220aaa9ff64c8774f0f074b6721, type: 3}
       propertyPath: platformColorIndex
       value: 2
@@ -40379,11 +40391,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4555977637411711363, guid: 0a66f118b1eff754b88fdca7e8c0fd16, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.48
+      value: -17.47
       objectReference: {fileID: 0}
     - target: {fileID: 4555977637411711363, guid: 0a66f118b1eff754b88fdca7e8c0fd16, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.95
+      value: -4.09
       objectReference: {fileID: 0}
     - target: {fileID: 4555977637411711363, guid: 0a66f118b1eff754b88fdca7e8c0fd16, type: 3}
       propertyPath: m_LocalPosition.z
@@ -43189,6 +43201,17 @@ MonoBehaviour:
   invisibleTrigger: {fileID: 0}
   extraChildCollider: {fileID: 0}
   playerMessageText: {fileID: 0}
+--- !u!114 &1812176683 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4161946527947577128, guid: ef90d641a01836042a704e9e81fa9ed0, type: 3}
+  m_PrefabInstance: {fileID: 6528669205451304264}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1826340508 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3677733983970391124, guid: 370ada8a81e606545bd7381fa128bb07, type: 3}
@@ -44086,7 +44109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5420930213509122711, guid: ef90d641a01836042a704e9e81fa9ed0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6415285860781032517, guid: ef90d641a01836042a704e9e81fa9ed0, type: 3}
       propertyPath: m_Pivot.x
@@ -44168,13 +44191,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7701167001132135596, guid: ef90d641a01836042a704e9e81fa9ed0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8793709058198454215, guid: ef90d641a01836042a704e9e81fa9ed0, type: 3}
       propertyPath: m_LocalPosition.z
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8793709058198454215, guid: ef90d641a01836042a704e9e81fa9ed0, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -208
+      value: -186.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8793709058198454215, guid: ef90d641a01836042a704e9e81fa9ed0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -128
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
